@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iLocate|Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <style>
+      #map {position: absolute; top: 0; bottom: 0; left: 0; right: 0;}
+    
+  </style>
+
+  </head>
+  <body>
+  
+  
+    <div id="map"></div>
+    <script>
+      var map = L.map('map').setView([0, 0], 1);
+
+      L.tileLayer('https://api.maptiler.com/maps/topographique/{z}/{x}/{y}.png?key=tnkMj49gbZbqLA2Cfj2l',
+       {attribution: 'href="<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap contributors</a>',
+      }).addTo(map);
+      var marker = L.marker([47.65863000885365,-117.4110874069085]).addTo(map);
+      var marker = L.marker([47.64646438886192,-117.4178739824494]).addTo(map);
+      var marker = L.marker([47.65551973604379,-117.4540239573619]).addTo(map);
+      var marker = L.marker([47.75812382814265,-116.7977957894251]).addTo(map);
+      var marker = L.marker([47.65917064160822,-117.4297147617838]).addTo(map);
+      var marker = L.marker([47.65028015493984,-117.4554354588783]).addTo(map);
+      var marker = L.marker([47.67818855126172,-117.4297833257517]).addTo(map);
+      var marker = L.marker([47.70977462180677,-117.4234189466736]).addTo(map);
+      var marker = L.marker([47.72927947812502,-117.3715065513899]).addTo(map);
+      var marker = L.marker([47.67207910776852,-117.2839362827291]).addTo(map);
+      var marker = L.marker([47.65965570234476,-117.4376851973286]).addTo(map);
+    </script>
+    
+    
+  </body>
+</html>
