@@ -17,7 +17,7 @@
   
     <div id="map"></div>
     <script>
-      var map = L.map('map').setView([0, 0], 1);
+      var map = L.map('map').setView([0, 0], 13);
 
       L.tileLayer('https://api.maptiler.com/maps/topographique/{z}/{x}/{y}.png?key=tnkMj49gbZbqLA2Cfj2l',
        {attribution: 'href="<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap contributors</a>',
